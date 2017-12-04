@@ -1,9 +1,20 @@
 body {
 
-	background: url.("/assets/images/Beach.jpg");
+	background: url.("/assets/images/Beach.jpg"):no-repeat;
 
-	margin: center center;
+	
+	
 
+}
+
+text {
+
+	font-size: 60px;
+	color: white;
+}
+nav {
+
+	margin: center;
 }
 
 img {
