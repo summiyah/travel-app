@@ -49,7 +49,7 @@ Coding Phase:
 * Persistance
 
 	
-Visual Mockup: ![Basic Visual Layout](Screen Shot 2017-12-04 at 4.38.12 PM.png)
+Visual Mockup: ![Basic Visual Layout](https://github.com/summiyah/travel-app/raw/master/Screen%20Shot%202017-12-04%20at%204.38.12%20PM.png)
 
 
 
