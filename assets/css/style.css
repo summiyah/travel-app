@@ -1,6 +1,12 @@
-* {
-	background: url(".assets/images/Beach.jpg");
+body {
+
+	background: url.("/assets/images/Beach.jpg");
 
 	margin: center center;
 
+}
+
+img {
+
+	shape-margin: round;
 }
