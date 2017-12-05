@@ -2,7 +2,7 @@
 
 LifeTravel: Organized & Simple
 
-Team: Juanita Pinkney-Barrier, Keli Chau, Summiyah Siddeeq, & Michelle Johnson.
+Team: Juanita Pinkney, Keli Chau, Summiyah Siddeeq, & Michelle Johnson.
 
 Overview: LifeTravel is a web application that allows the user to research a location and obtain important data right on their screen. The application will show ticket information, hotels, weather, immunizations required/health data. 
 
