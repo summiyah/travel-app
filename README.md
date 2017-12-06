@@ -15,7 +15,6 @@
 Theme: Travel
 
 ### API
-* Skyscanner API
 * Weather Underground API
 * Currency Layer
 * World Air Quality
