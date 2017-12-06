@@ -8,11 +8,9 @@
 
 ### **Overview:** LifeTravel is a web application that allows the user to research a location and obtain important data right on their screen. The application will show ticket information, hotels, weather, immunizations required/health data. App will be fully functional for mobile.
 
-### **API's:** [Skyscanner API](https://partners.skyscanner.net/affiliates/travel-apis/), [Center for Disease Control API](https://tools.cdc.gov/syndication/api.aspx#feedoverview), & [Weather Channel API](https://www.programmableweb.com/api/weather-channel)
-
 ## **Rough Breakdown of Tasks:**
 
-Theme: Travel
+### Theme: Travel
 
 ### API
 * Weather Underground API
