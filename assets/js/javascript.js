@@ -1,8 +1,9 @@
 $(document).ready(function(){
     console.log("I'm ready!");
-    $(".placeholder").on("click", function(weatherResults){
-		var weatherURL = "https://api.wunderground.com/api/9e5b268d945691e1/conditions/weather";
-		console.log(weatherURL);
+
+    $(".placeholder").on("click", function(){
+		var weatherURL = "https://wunderground.com/search?y=" + weather + fahreinheit + celsius + temperature + precipitation + "=&plot=short&apikey=9e5b268d945691e1";
+
 		$.ajax({
 			url: weatherURL,
 			method: "GET"
@@ -12,10 +13,6 @@ $(document).ready(function(){
     		throw err;
     		console.log(err);
     	});
-    	var data = $("<weatherResults>");
-    	data.attr("result".data)
-    	$(#weatherResults).append(data)
-    	$(document).on("click", ".button", weatherResults);
-
 	});
+
 });
