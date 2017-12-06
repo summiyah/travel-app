@@ -1,31 +1,18 @@
-$( document ).ready(function() {
-    console.log( "I'm ready!" );
+$(document).ready(function(){
+    console.log("I'm ready!");
 
-var queryURL = "";
+    $(".placeholder").on("click", function(){
+		var weatherURL = "https://wunderground.com/search?y=" + weather + fahreinheit + celsius + temperature + precipitation + "=&plot=short&apikey=9e5b268d945691e1";
 
-$.ajax({
-	url: queryURL,
-	method: "GET"
-	data: {} //flights api data
-
-$.ajax({
-	url: queryURL,
-	method: "GET"
-	data: {} //currency api data
-
-$.ajax({
-	url: queryURL,
-	method: "GET"
-	data: {} //weather api data
-
-$.ajax({
-	url: queryURL,
-	method: "GET"
-	data: {} //air quality api data
-})
-})
-})
-})
-
+		$.ajax({
+			url: weatherURL,
+			method: "GET"
+		}).done(function(result){
+			console.log(result);
+    	}).fail(function(err){
+    		throw err;
+    		console.log(err);
+    	});
+	});
 
 });
