@@ -8,3 +8,18 @@ title{
 	font-family: "Times New Roman", Georgia, sans-serif;
 	font-size: 100%;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    height: 250px;
+    font-size: 120%;
+    font-family: "Times New Roman", Georgia, sans-serif;
+    padding-top: 2%;
+    text-align: center;
+    padding-left: 35%;
+}
