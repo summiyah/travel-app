@@ -1,4 +1,10 @@
-.title{
+span {
+
+	padding-top: 10px;
+	padding-bottom: 90px;
+}
+
+title{
 	font-family: "Times New Roman", Georgia, sans-serif;
 	font-size: 100%;
 }
