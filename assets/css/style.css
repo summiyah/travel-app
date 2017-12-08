@@ -1,0 +1,42 @@
+
+
+body {
+    padding-top: 70px;
+}
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.logo {
+    margin-left: 20px;
+    font-family: cursive;
+    font-size: 50px;
+}
+
+.nav {
+    margin-right: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+}
+
+.jumbotron {
+    font-family: 'Nunito', sans-serif;
+
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+}
+
