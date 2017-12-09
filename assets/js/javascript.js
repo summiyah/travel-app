@@ -4,10 +4,10 @@ $(document).ready(function(){
     	console.log("Ok");
 		var weatherURL = "https://api.wunderground.com/api/9e5b268d945691e1/conditions/q/CA/San_Francisco.json";
 		console.log(weatherURL);
-		$.ajax({
-			url: weatherURL,
-			method: "GET"
-			dataType: "jsonp",
+        $.ajax({
+          dataType: "jsonp",
+          url: weather,
+          success: callback
 		}).done(function(result){
 			console.log(result);
     	}).fail(function(err){

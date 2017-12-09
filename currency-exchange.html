@@ -8,53 +8,83 @@
 	<script type="text/javascript" src="assets/js/javascript.js"></script>	
 </head>
 <body>
-<nav class="navbar navbar-inverse">
+
+
+  <style>
+    
+    body{
+
+      background:lightblue;
+    }
+  </style>
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">LifeTravel</a>
+      <ul class="nav navbar-nav navbar-left">
+        <li><h2><a href="#">mylifeTravel</a></h2></li>
+      </ul>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+
+    <br>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Search Flights</a></li>
-        <li><a href="#">Currency Exchange</a></li>
-        <li><a href="#">Current Weather</a></li>
-        <li><a href="#">Travel Checklist</a></li>
-        <li><a href="#">About LifeTravel</a></li>
-        <li><a href="#">About Developers</a></li>
+        <br>
+        <li class="active"><h3><a href="#">Travel Checklist</a></h3></li>
+
+        <li class="active"><h3><a href="#">Weather Conditions</a></h3></li>
+
+        <li class="dropdown"><h3><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Currency Converter<span class="caret"></span></a></h3></li>
+
+<!--         */ unsure if this function is necessary for the dropdown items. jpb
+        the below code was obtained from bootstrap along with the above code. jpb */ -->
+
+<!--          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul> --> 
+    
+    <!-- search field for user to search destination of choice. jpb -->
+    <!-- this search form should provide the json/ajax call for the country data. jpb -->
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search by country">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
     </div>
   </div>
 </nav>
-<footer class="footer">
-	<div class="row">
-		<div class="col-sm-5">
-			&copy; 
-			<script language="javascript" type="text/javascript">
-				var today = new Date()
-				var year = today.getFullYear()
-				document.write(year)
-			</script> 
-			LifeTravel. All Rights Reserved. 
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-5">		
-			<ul><a href="#">About LifeTravel</a></ul>
-			<ul><a href="#">About Developers</a></ul>
-			<ul><a href="#">Terms of Use</a></ul>
-			<ul><a href="#">Privacy Policy</a></ul>
-		</div>
-	</div>
-</footer>
+
+      <br>
+
+      <!-- container for client information regarding website services and options. jpb -->
+      <div class="jumbotron">
+        <h3>Let's Go!</h3>
+        <p>Traveling...That's the fun part! Let's assume, you're traveling to a new and unfamiliar place. What do you need to know before you go? What to bring, in cse of an emergency or where to stay for the exact travel attraction you're looking for? We're here to help you with your travel checklist! So you can get to your destination, worry free!</p>
+
+        <br>
+
+        <p>Simply, search the destination of your choice to know exactly what your travel requirements are, and we'll help you with the rest!</p>
+        <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+      </div>
+
+
+
+
+
+ 
 </body>
 </html>
