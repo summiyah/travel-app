@@ -10,8 +10,102 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+    background: url.("./assets/images/bora.jpg"):no-repeat;
+    margin: center;
+    padding-top: 50px;
+    font-family: sans-serif;
+    font-weight: 20px;
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
 }
+div {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 5px;
+    color: black;
+}
+text {
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 5px;
+    color: black;
+}
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+nav {
+    margin: center;
+}
+img {
+    shape-margin: round;
+}
+.title {
+    font-family: "Times New Roman", Georgia, sans-serif;
+    font-size: 100%;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    height: 250px;
+    font-size: 120%;
+    font-family: "Times New Roman", Georgia, sans-serif;
+    /*padding-top: 2%;*/
+    text-align: center;
+    /*padding-left: 35%;*/
+}
+
+.hero-spacer {
+    margin-top: 50px;
+}
+.hero-feature {
+    margin-bottom: 30px;
+}
+footer {
+  /*  margin: 50px;*/
+  /*  padding-top: 15px;*/
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.logo {
+    margin:left: 20px;
+    font-family: cursive, sans-serif;
+    font-size: 50px;
+    color: white;
+}
+.nav {
+    margin:center: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+}
+.jumbotron {
+    font-family: 'Nunito', sans-serif;
+}
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: blue;
+
+}
+.container {
+  margin: center center;
+  font-family: sans-serif;
+  font-size: 10px;
+  color: black;
+}
+
+
+
 article,
 aside,
 details,
