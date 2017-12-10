@@ -1,0 +1,38 @@
+
+.logo {
+    padding-left: 30px;
+}
+
+body {
+}
+
+
+nav {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.nav:hover {
+    color: white;
+}
+
+.jumbotron {
+    font-family: 'Nunito', sans-serif;
+    color: whitesmoke;
+    align-items: center;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+
+.container {
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
