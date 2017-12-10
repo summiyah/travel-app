@@ -1,178 +1,242 @@
-<<<<<<< HEAD
-      <!DOCTYPE html>
-      <html>
-      <head>
-      <style>
-      body {
-          background-image: url("https://static.pexels.com/photos/457882/pexels-photo-457882.jpeg");
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-position: center; 
-
-
-        }
-
-      /* Style the tab */
-      div.tab {
-          overflow: hidden;
-          border: 1px solid #ccc;
-          background-color: white;
-
-      }
-
-      /* Style the buttons inside the tab */
-      div.tab button {
-          background-color: beige;
-          float: center;
-          border: none;
-          outline: none;
-          cursor: pointer;
-          padding: 30px 15px;
-          transition: 0.3s;
-          font-size: 20px;
-      }
-
-      /* Change background color of buttons on hover */
-      div.tab button:hover {
-          background-color: lightblue;
-      }
-
-      /* Create an active/current tablink class */
-      div.tab button.active {
-          background-color: lightblue;
-      }
-
-      /* Style the tab content */
-      .tabcontent {
-          display: none;
-          padding: 5px 5px;
-          border: 3px black;
-          border-top: none;
-          font-family: sans-serif;
-          font-size: 20px;
-          color: black;
-      }
-      </style>
-      </head>
-      <body>
-
-
-      <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Currency')">Currency</button>
-        <button class="tablinks" onclick="openCity(event, 'Weather and Conditions')">Weather and Conditions</button>
-        <button class="tablinks" onclick="openCity(event, 'Travel Checklist')">Travel Checklist</button>
-      </div>
-
-      <div id="Currency" class="tabcontent">
-        <h3>Currency</h3>
-        <p>Find out the currency exchange rate for your destination of choice.</p>
-
-
-
-        <div id='gcw_mainFGKN2Iv7A' class='gcw_mainFGKN2Iv7A'></div>
-        <a id='gcw_siteFGKN2Iv7A' href='https://freecurrencyrates.com/en/'>FreeCurrencyRates.com</a>
-        <script>function reloadFGKN2Iv7A(){ var sc = document.getElementById('scFGKN2Iv7A');if (sc) sc.parentNode.removeChild(sc);sc = document.createElement('script');sc.type = 'text/javascript';sc.charset = 'UTF-8';sc.async = true;sc.id='scFGKN2Iv7A';sc.src = 'https://freecurrencyrates.com/en/widget-table?iso=USDEURGBPRUBAUDCNYAEDBRLCUPNGN&df=1&p=FGKN2Iv7A&v=fi&source=fcr&width=600&width_title=0&firstrowvalue=1&thm=A6C9E2,FCFDFD,4297D7,5C9CCC,FFFFFF,C5DBEC,FCFDFD,2E6E9E,000000&title=Currency%20Converter&tzo=300';var div = document.getElementById('gcw_mainFGKN2Iv7A');div.parentNode.insertBefore(sc, div);} reloadFGKN2Iv7A(); </script>
-        <!-- put custom styles here: .gcw_mainFGKN2Iv7A{}, .gcw_headerFGKN2Iv7A{}, .gcw_ratesFGKN2Iv7A{}, .gcw_sourceFGKN2Iv7A{} -->
-        <!--End of Currency Converter widget by FreeCurrencyRates.com -->
-        </div>
-
-          <div id="Weather and Conditions" class="tabcontent">
-            <h3>Weather and Conditions</h3>
-            <p>Know, before you go.</p> 
-          </div>
-
-            <div id="Travel Checklist" class="tabcontent">
-              <h3>Travel Checklist</h3>
-              <p>Check off your to do list before your departure.</p>
-                <ul>
-                  <li><span>_____Immunization</span></li>
-                  <li><span>_____Another checklist item</span></li>
-                  <li><span>_____Another checklist item</span></li>
-                  <li><span>_____Another checklist item</span></li>
-                  <li><span>_____Another checklist item</span></li>
-                  <li><span>_____Another checklist item</span></li>
-                  <li><span>_____Another checklist item</span></li>
-                  <li><span>_____Another checklist item</span></li>
-                </ul>
-            </div>
-
-            <script>
-            function openCity(evt, cityName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(cityName).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
-            </script>
-           
-      </body>
-      </html> 
-=======
 <!DOCTYPE html>
-<html>
-<head>
-	<title>LifeTravel: Organized and Simple | Travel Checklist</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>	
-	<script type="text/javascript" src="assets/js/javascript.js"></script>	
-</head>
+<html lang="en">
+    <head>
+    <title>myLifeTravel</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="javascript" type="jQuery/data">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="javascript">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="javascript">
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="javascript">
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="javascript">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="javascript">
+    <link href="https://fonts.googleapis.com/css?family=Delius+Unicase|Rubik+Mono+One" rel="javascript">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="assets/materialize css/materialize.min.css" rel="stylesheet">
+    </head>
+
+
+
+
+
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">LifeTravel</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Search Flights</a></li>
-        <li><a href="#">Currency Exchange</a></li>
-        <li><a href="#">Current Weather</a></li>
-        <li><a href="#">Travel Checklist</a></li>
-        <li><a href="#">About LifeTravel</a></li>
-        <li><a href="#">About Developers</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
+
+
+        <div class="container">   
+
+        <div>
+            <h2><img src="assets/images/lis.jpg" alt="myLifeTravel beach logo" width="100" height="100"><a class="active"><a href="index.html">mylifeTravel</a></h2>             
+            <button type="button" class="active btn-primary btn-md"><a href="http://maps.google.com">Travel Destination</a></button>
+            <button type="button" class="active btn-primary btn-md"><a href="weather.html">Weather & Conditions</a></button>
+            <button type="button" class="active btn-primary btn-md"><a href="currency-exchange.html">Currency Converter</a></button>
+            <button type="button" class="active btn-primary btn-md"><a href="travel-checklist.html">Travel Checklist</a></button>
+            <button type="button" class="active btn-primary btn-md"><a href="about.html">More...</a></button>
+        </a>
+    </h2>
+</div>
+</div>
+
+
+    
+
+  <style>
+      body {
+          margin: 0;
+          min-width: 250px;
+      }
+      /* Include the padding and border in an element's total width and height */
+      * {
+          box-sizing: border-box:30px;
+      }
+      /* Remove margins and padding from the list */
+      ul {
+          margin: 0;
+          padding: 0;
+      }
+      /* Style the list items */
+      ul li {
+          cursor: pointer;
+          position: relative;
+          padding: 12px 8px 12px 40px;
+          list-style-type: none;
+          background: #eee;
+          font-size: 18px;
+          transition: 0.2s;
+          /* make the list items unselectable */
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+      }
+      /* Set all odd list items to a different color (zebra-stripes) */
+      ul li:nth-child(odd) {
+          background: #f9f9f9;
+      }
+      /* Darker background-color on hover */
+      ul li:hover {
+          background: lightblue;
+      }
+      /* When clicked on, add a background color and strike out text */
+      ul li.checked {
+          background: grey;
+          color: #fff;
+          text-decoration: line-through;
+      }
+      /* Add a "checked" mark when clicked on */
+      ul li.checked::before {
+          content: '';
+          position: absolute;
+          border-color: blue;
+          border-style: solid;
+          border-width: 0 2px 2px 0;
+          top: 10px;
+          left: 16px;
+          transform: rotate(45deg);
+          height: 15px;
+          width: 7px;
+      }
+      /* Style the close button */
+      .close {
+          position: absolute;
+          right: 0;
+          top: 0;
+          padding: 12px 16px 12px 16px;
+      }
+      .close:hover {
+          background-color: #f44336;
+          color: blue;
+      }
+      /* Style the header */
+      .header {
+          background-color: lightblue;
+          padding: 30px 40px;
+          color: navy;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 10px;
+      }
+      /* Clear floats after the header */
+      .header:after {
+          content: "";
+          display: table;
+          clear: both;
+      }
+      /* Style the input */
+      input {
+          border: none;
+          width: 75%;
+          padding: 10px;
+          float: left;
+          font-size: 16px;
+      }
+      /* Style the "Add" button */
+      .addBtn {
+          padding: 10px;
+          width: 25%;
+          background: #d9d9d9;
+          color: #555;
+          float: left;
+          text-align: center;
+          font-size: 16px;
+          cursor: pointer;
+          transition: 0.3s;
+      }
+      .addBtn:hover {
+          background-color: #bbb;
+      }
+  </style>
+
+  <div class="header" id="myDIV">
+    <h2 style="margin:5px">Wait! Before you go...Let's check off the really important stuff!</h2><input id="myInput" placeholder="Before I forget..." type="text"> <span class="addBtn" onclick="newElement()">Add to list</span>
   </div>
-</nav>
-<footer class="footer">
-	<div class="row">
-		<div class="col-sm-5">
-			&copy; 
-			<script language="javascript" type="text/javascript">
-				var today = new Date()
-				var year = today.getFullYear()
-				document.write(year)
-			</script> 
-			LifeTravel. All Rights Reserved. 
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-5">		
-			<ul><a href="#">About LifeTravel</a></ul>
-			<ul><a href="#">About Developers</a></ul>
-			<ul><a href="#">Terms of Use</a></ul>
-			<ul><a href="#">Privacy Policy</a></ul>
-		</div>
-	</div>
-</footer>
+  <ul id="myUL">
+    <li>Hit the gym, gotta look good in that new swimsuit!</li>
+    <li>Pay bills first, so you can have the most fun on your trip!</li>
+    <li>Confirm your booked flight and in-flight arrangements.</li>
+    <li>Do you need your express boarding pass?</li>
+    <li>Don't forget your Passort! Also, if required, birth certificate and other forms of identification.</li>
+    <li>Hey, did you pack your laptop, moible phone and additional electronics?</li>
+    <li>How about those powercords and or backup batteries?</li>
+    <li>Did your doctor sign off on those meds?</li>
+  </ul>
+  <script>
+          // Create a "close" button and append it to each list item
+          var myNodelist = document.getElementsByTagName("LI");
+          var i;
+          for (i = 0; i < myNodelist.length; i++) {
+              var span = document.createElement("SPAN");
+              var txt = document.createTextNode("\u00D7");
+              span.className = "close";
+              span.appendChild(txt);
+              myNodelist[i].appendChild(span);
+          }
+          // Click on a close button to hide the current list item
+          var close = document.getElementsByClassName("close");
+          var i;
+          for (i = 0; i < close.length; i++) {
+              close[i].onclick = function() {
+                  var div = this.parentElement;
+                  div.style.display = "none";
+              }
+          }
+          // Add a "checked" symbol when clicking on a list item
+          var list = document.querySelector('ul');
+          list.addEventListener('click', function(ev) {
+              if (ev.target.tagName === 'LI') {
+                  ev.target.classList.toggle('checked');
+              }
+          }, false);
+          // Create a new list item when clicking on the "Add" button
+          function newElement() {
+              var li = document.createElement("li");
+              var inputValue = document.getElementById("myInput").value;
+              var t = document.createTextNode(inputValue);
+              li.appendChild(t);
+              if (inputValue === '') {
+                  alert("You must write something!");
+              } else {
+                  document.getElementById("myUL").appendChild(li);
+              }
+              document.getElementById("myInput").value = "";
+              var span = document.createElement("SPAN");
+              var txt = document.createTextNode("\u00D7");
+              span.className = "close";
+              span.appendChild(txt);
+              li.appendChild(span);
+              for (i = 0; i < close.length; i++) {
+                  close[i].onclick = function() {
+                      var div = this.parentElement;
+                      div.style.display = "none";
+                  }
+              }
+          }
+  </script>
+
+
+
+
+
+            <footer>Copyright &copy; myLife Travel</footer>
+
+            <footer class="page-footer indigo darken-4">    
+              <div class="footer-copyright">
+              <script language="javascript" type="text/javascript">
+                 var today = new Date()
+                 var year = today.getFullYear()
+                 document.write(year)
+              </script> myLife Travel. All Rights Reserved.
+            </footer>
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+
 </body>
 </html>
->>>>>>> 2486892adaedee3adac20909ee1273872617279b
