@@ -1,90 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>LifeTravel: Organized and Simple | Currency Exchange</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>	
-	<script type="text/javascript" src="assets/js/javascript.js"></script>	
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>lifeTravel</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <link rel="stylesheet" href="assets/materialize css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Delius+Unicase|Rubik+Mono+One" rel="stylesheet">
+
+
+
 </head>
+
 <body>
 
 
-  <style>
-    
-    body{
+<nav>
+    <div class="nav light-blue darken-4">
+        <a href="index.html" class="logo"><img src="assets/images/lifetravelogo.png" width="200" height="70">
+        </a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="travel-checklist.html">Checklist</a></li>
+            <li><a href="search-flights.html">Search Flights</a></li>
+            <li><a href="about.html">About lifeTravel</a></li>
+        </ul>
 
-      background:lightblue;
-    }
-  </style>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <ul class="nav navbar-nav navbar-left">
-        <li><h2><a href="#">mylifeTravel</a></h2></li>
-      </ul>
+        <!-- TRYING TO GET MOBILE DROPDOWN MENU TO WORK
+        <ul class="side-nav" id="mobile-demo">
+             <li><a href="sass.html">Sass</a></li>
+             <li><a href="badges.html">Components</a></li>
+             <li><a href="collapsible.html">Javascript</a></li>
+             <li><a href="mobile.html">Mobile</a></li>
+         </ul>
+         <script>$(".button-collapse").sideNav();</script>
+ -->
     </div>
-
-    <br>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <br>
-        <li class="active"><h3><a href="#">Travel Checklist</a></h3></li>
-
-        <li class="active"><h3><a href="#">Weather Conditions</a></h3></li>
-
-        <li class="dropdown"><h3><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Currency Converter<span class="caret"></span></a></h3></li>
-
-<!--         */ unsure if this function is necessary for the dropdown items. jpb
-        the below code was obtained from bootstrap along with the above code. jpb */ -->
-
-<!--          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul> --> 
-    
-    <!-- search field for user to search destination of choice. jpb -->
-    <!-- this search form should provide the json/ajax call for the country data. jpb -->
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search by country">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-    </div>
-  </div>
 </nav>
 
-      <br>
 
-      <!-- container for client information regarding website services and options. jpb -->
-      <div class="jumbotron">
-        <h3>Let's Go!</h3>
-        <p>Traveling...That's the fun part! Let's assume, you're traveling to a new and unfamiliar place. What do you need to know before you go? What to bring, in cse of an emergency or where to stay for the exact travel attraction you're looking for? We're here to help you with your travel checklist! So you can get to your destination, worry free!</p>
+<div class="container">
+    <!--<img src="assets/images/pexels-photo-297755.jpeg" width="600">-->
+    <header class="jumbotron hero-spacer red lighten-3">
+        <h1>Welcome to<img src="assets/images/lifetravelogo.png" width="200" height="70"></h1>
+        <!--
+        doesn't look good on mobile. should we resize. Too much text for mobile view
+        <p>If you are a last minute adventurer and like to travel on the fly... then, we'd love to help with your travel management.-->
+        <!--We'll provide you with an <i>"OMG, I totally forgot to do that!"</i>, checklist, that you can add to and check off as you go, currency converter, weather conditions, and flight booking</p>-->
 
-        <br>
-
-        <p>Simply, search the destination of your choice to know exactly what your travel requirements are, and we'll help you with the rest!</p>
-        <p><a class="btn btn-primary btn-lg">Learn more</a></p>
-      </div>
-
+    </header>
 
 
+    <footer class="page-footer light-blue darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                &copy;
+                <script language="javascript" type="text/javascript">
+                    var today = new Date()
+                    var year = today.getFullYear()
+                    document.write(year)
+                </script>
+                LifeTravel. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
 
 
- 
+</div>
+
+<script src="js/jquery.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
