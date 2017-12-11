@@ -21,7 +21,7 @@ $(document).ready(function(){
             $("#city").html("<h1>" + "City Name: " + response.name + "</h1>");
             $("#wind").text("Wind Speed: " + response.wind.speed);
             $("#humidity").text("Humidity: " + response.main.humidity);
-            $("#temp").html("Temperature (F): " + response.main.temp + "&deg;")
+            $("#temp").html("Temperature: " + parseInt((9/5) * (response.main.temp - 273) + 33) + '&deg;F ' + (parseInt(response.main.temp - 273.15)) + '&deg;C ' + response.main.temp + '&deg;K ')
             // SAMPLE RESPONSE for london,uk
             // GET http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22
             // {
