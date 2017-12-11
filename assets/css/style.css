@@ -5,8 +5,9 @@ nav {
 }
 
 header .card span.card-title {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Pacifico', cursive;
     font-size: 50px;
+    text-align: center;
 }
 
 body {
@@ -36,5 +37,9 @@ p {
 }
 
 .logo {
+    font-family: 'Pacifico', cursive;
+    padding-left: 20px;
     padding-right: 500px;
 }
+
+

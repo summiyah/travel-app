@@ -8,6 +8,7 @@
     <title>lifeTravel</title>
 
     <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -20,15 +21,16 @@
 
 <body>
 
+<!--<img src="assets/images/lifetravelogo.png" width="200" height="70">-->
 
 <nav class="nav blue-grey darken-1">
-    <a href="index.html" class="logo"><img src="assets/images/lifetravelogo.png" width="200" height="70">
+    <a href="index.html" class="logo">lifeTravel
     </a>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="index.html">Home</a></li>
         <li><a href="travel-checklist.html">Checklist</a></li>
-        <li><a href="search-flights.html">Search Flights</a></li>
+        <li><a href="https://www.google.com/flights/">Search Flights</a></li>
         <li><a href="about.html">About lifeTravel</a></li>
     </ul>
 
@@ -50,11 +52,10 @@
             <div class="card">
                 <div class="card-image">
                     <img src="assets/images/pexels-photo-386009.jpeg">
-                    <span class="card-title">Welcome to Life Travel</span>
+                    <span class="card-title">Welcome to lifeTravel</span>
                 </div>
                 <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                    <p>lifeTravel is the perfect short notice travel planner. We help you find weather, currency exchange rates, air quality and the perfect checklist to make sure you are prepared!</p>
                 </div>
             </div>
         </div>
@@ -65,11 +66,11 @@
         <div class="col l3 s12">
             <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
-                    <span class="card-title">Book Flights</span>
-                    <i class="medium material-icons">flight</i>
+                    <span class="card-title">Currency Converter</span>
+                    <i class="medium material-icons">attach_money</i>
                 </div>
                 <div class="card-action">
-                    <a href="search-flights.html">Book</a>
+                    <a href="currency-exchange.html">Book</a>
                 </div>
             </div>
         </div>
@@ -87,6 +88,9 @@
                     <div id="temp"></div>
                     <div id="wind"></div>
                     <div id="humidity"></div>
+
+                    <div id="error"></div>
+
                     <script src="assets/js/javascript.js"></script>
                 </div>
                 <div class="card-action">
@@ -145,7 +149,7 @@
                     var year = today.getFullYear();
                     document.write(year);
                 </script>
-                LifeTravel. All Rights Reserved.
+                lifeTravel. All Rights Reserved.
             </div>
         </div>
     </footer>

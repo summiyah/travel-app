@@ -18,10 +18,10 @@ $(document).ready(function(){
             method: "GET"
         }).done(function(response){
             console.log(response);
-            $("#city").html("<h1>" + "City Name: " + response.name + "</h1>")
-            $("#wind").text("Wind Speed: " + response.wind.speed)
-            $("#humidity").text("Humidity: " + response.main.humidity)
-            $("#temp").text("Temperature (F): " + response.main.temp)
+            $("#city").html("<h1>" + "City Name: " + response.name + "</h1>");
+            $("#wind").text("Wind Speed: " + response.wind.speed);
+            $("#humidity").text("Humidity: " + response.main.humidity);
+            $("#temp").html("Temperature (F): " + response.main.temp + "&deg;")
             // SAMPLE RESPONSE for london,uk
             // GET http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22
             // {
@@ -43,6 +43,11 @@ $(document).ready(function(){
         }).fail(function (error) {
             // log the error so we know when it doesn't work
             console.error(error);
+            $("#error").text("Error. Please try again.")
+
         })
     });
+
 });
+
+
