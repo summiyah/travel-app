@@ -1,28 +1,22 @@
 
-.logo {
-    padding-left: 30px;
-}
-
-body {
-}
-
-
 nav {
     font-family: 'Proza Libre', sans-serif;
     font-size: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
-.nav:hover {
-    color: white;
-}
-
-.jumbotron {
+header .card span.card-title {
     font-family: 'Nunito', sans-serif;
-    color: whitesmoke;
-    align-items: center;
+    font-size: 50px;
 }
+
+body {
+    background-image: url("../images/halftone-yellow.png");
+}
+
+.container {
+
+}
+
 
 p {
     font-family: 'Nunito', sans-serif;
@@ -35,4 +29,15 @@ p {
 .hero-feature {
     margin-bottom: 30px;
 }
+
+.footer-copyright {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.logo {
+    padding-right: 500px;
+}
+
+
 
