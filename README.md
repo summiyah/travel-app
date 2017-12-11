@@ -13,18 +13,19 @@
 ### Theme: Travel
 
 ### API
-* Weather Underground API
+
+* Open Weath
 * Currency Layer
 * World Air Quality
-* Sabre Travel Insight
 
 ### Content:
 
-* Travel Information: Where to, flight prices, hotels etc.
+* Flight Search
 * Travel Preparation Checklist
-* Required Immunzations for destination selected
-* Digital Immunzations Records * stretch goals
-* Safety Information * stretch goals
+* Currency Converter
+* Weather Search
+* Air Quality Search
+
 
 ### UI/UX Design Phase:
 
@@ -35,7 +36,6 @@
 
 ### Wireframes:
 
-* Bootstrap 
 * Material Design
 
 ### Coding Phase:
@@ -48,7 +48,12 @@
 	
 ### Visual Mockup: ![Basic Visual Layout](https://github.com/summiyah/travel-app/raw/master/Screen%20Shot%202017-12-04%20at%204.38.12%20PM.png)
 
+### Future Goals
 
+* Digital Immunzations Records
+* Safety Information 
+* Required Immunizations for Destination
+* Flights API Integration
 
 
 
