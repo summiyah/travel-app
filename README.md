@@ -20,7 +20,7 @@
 * Open Weather
 >>>>>>> e82e9c7c00526bcf20b711bdfd8fe84bc5cba60b
 * Currency Layer
-* World Air Quality
+* AirVisual
 
 ### Content:
 
