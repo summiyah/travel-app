@@ -37,8 +37,9 @@
     <ul class="side-nav" id="mobile-demo">
         <li><a href="index.html">Home</a></li>
         <li><a href="travel-checklist.html">Checklist</a></li>
-        <li><a href="https://www.google.com/flights">Search Flights</a></li>
         <li><a href="about.html">About lifeTravel</a></li>
+
+        <li><a href="https://www.google.com/flights">Search Flights</a></li>
     </ul>
     <script>$(".button-collapse").sideNav();</script>
     </div>
@@ -68,12 +69,19 @@
                 <div class="card-content white-text">
                     <span class="card-title">Currency Converter</span>
                     <i class="medium material-icons">attach_money</i>
+                    <div class="input-field col s6">
+                    <label for="search_input">Search</label>
+                    <input type="text" id="search_input" placeholder="search"><br>
+                    </div>
+                    <div id="search-results"></div>
+
                 </div>
                 <div class="card-action">
-                    <a href="currency-exchange.html">Count</a>
+                    <a id="add_topic">Count</a>
                 </div>
             </div>
         </div>
+
 
 
         <div class="col l3 s12">
