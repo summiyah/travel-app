@@ -103,7 +103,7 @@ $(document).ready(function() {
         function currencyAjaxCall(currencyCode) {
             var currency = $(this).attr("data-name");
             var searchCurrency = searchInput.val()
-            var currencyQueryURL = "http://www.apilayer.net/api/live?access_key=3a9198bf3feebaee79f8a0513601a325&currencies="+ currencyCode;
+            var currencyQueryURL = "https://www.apilayer.net/api/live?access_key=3a9198bf3feebaee79f8a0513601a325&currencies="+ currencyCode;
 
             console.log("Hey you")
 
@@ -120,6 +120,24 @@ $(document).ready(function() {
         destinationAjaxCall();
 
     });
+
+    // http://api.airvisual.com/v2/city?city=Los Angeles&state=California&country=USA&key={{YOUR_API_KEY}}
+
+
+        $("#airQualitySearch").on("click", function(event){
+
+        $.ajax({
+            url: "https://api.airvisual.com/v2/nearest_city?key=kc8HoCbvK9K9umMtf",
+            method: "GET"
+        }).done(function(response){
+            console.log(response);
+            $("#airPollution").text("Air Pollution: " + response.data.current.pollution.aqius)
+        }).fail(function(error){
+            console.log(error);
+            $("#airQualityError").text("Error. Please try again.")
+        })
+    });
+
 
 });
 
