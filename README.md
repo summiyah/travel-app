@@ -1,12 +1,12 @@
-# LifeTravel
+# lifeTravel
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Noun_15537_ccElliotVerhaeren_travel.svg/200px-Noun_15537_ccElliotVerhaeren_travel.svg.png)
 
-## **LifeTravel:** Organized & Simple
+## **lifeTravel:** Organized & Simple
 
 ### **Team:** Juanita Pinkney-Barrier, Summiyah Siddeeq, Michelle Johnson, and Keli Chau
 
-### **Overview:** LifeTravel is a web application that allows the user to research a location and obtain important data right on their screen. The application will show ticket information, hotels, weather, immunizations required/health data. App will be fully functional for mobile.
+### **Overview:** lifeTravel is a web application that allows the user to research a location and obtain important data right on their screen. The application will show ticket information, hotels, weather, immunizations required/health data. App will be fully functional for mobile.
 
 ## **Rough Breakdown of Tasks:**
 
